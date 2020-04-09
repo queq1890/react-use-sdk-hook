@@ -1,0 +1,69 @@
+{
+  "name": "react-use-sdk-hook",
+  "version": "0.1.0",
+  "source": "src/index.ts",
+  "repository": "https://github.com/queq1890/react-use-sdk-hook",
+  "author": "Yuji Matsumoto",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "sdk"
+  ],
+  "files": [
+    "index.*"
+  ],
+  "scripts": {
+    "build": "pika build"
+  },
+  "devDependencies": {
+    "@pika/pack": "^0.5.0",
+    "@pika/plugin-build-types": "^0.4.0",
+    "@pika/plugin-build-web": "^0.4.0",
+    "@pika/plugin-standard-pkg": "^0.4.0",
+    "@types/eslint": "^6.8.0",
+    "@types/eslint-plugin-prettier": "^2.2.0",
+    "@types/prettier": "^2.0.0",
+    "@types/react": "^16.9.33",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prefer-arrow": "^1.2.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^3.0.0",
+    "prettier": "^2.0.4",
+    "react": "^16.13.1",
+    "typescript": "^3.8.3"
+  },
+  "peerDependencies": {
+    "react": ">=^16.8.0"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg",
+        {
+          "exclude": [
+            "__tests__/**/*"
+          ]
+        }
+      ],
+      [
+        "@pika/plugin-build-web"
+      ],
+      [
+        "@pika/plugin-build-types"
+      ]
+    ]
+  },
+  "dependencies": {}
+}
