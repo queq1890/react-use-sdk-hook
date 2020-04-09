@@ -9,7 +9,7 @@ const useSDK = ({ src, cleanUpFlag = false }: Options) => {
   const [loaded, setLoaded] = useState(false);
   const cleanUp = useCallback(() => {
     const script = document.querySelector(`script[src="${src}"]`);
-    if (script) document.removeChild(script);
+    if (script) document.body.removeChild(script);
   }, [src]);
 
   useEffect(() => {

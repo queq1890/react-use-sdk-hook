@@ -1,6 +1,6 @@
 {
   "name": "react-use-sdk-hook",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "source": "src/index.ts",
   "repository": "https://github.com/queq1890/react-use-sdk-hook",
   "author": "Yuji Matsumoto",
