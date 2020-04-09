@@ -8,7 +8,7 @@ type Options = {
 const useSDK = ({ src, cleanUpFlag = false }: Options) => {
   const [loaded, setLoaded] = useState(false);
   const cleanUp = useCallback(() => {
-    const script = document.querySelector(`script[src=${src}]`);
+    const script = document.querySelector(`script[src="${src}"]`);
     if (script) document.removeChild(script);
   }, [src]);
 
