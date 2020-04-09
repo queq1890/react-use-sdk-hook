@@ -45,7 +45,7 @@
     "typescript": "^3.8.3"
   },
   "peerDependencies": {
-    "react": ">=16.8.0"
+    "react": "^16.13.1"
   },
   "@pika/pack": {
     "pipeline": [
